@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.responsive-table {
+  width: 100%;
+  margin: 20px auto;
+  /* border-radius: 1rem; */
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.responsive-table th {
+  background-color: #f2f2f2;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.responsive-table td {
+  padding: 1rem;
+}
+
+.head-topic {
+  width: 45vw;
+}
+
+/* Make the table responsive */
