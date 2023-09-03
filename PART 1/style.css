@@ -5,6 +5,7 @@ body {
   letter-spacing: 1px;
 }
 
+
 h2 {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -14,6 +15,11 @@ h2 {
   margin: 20px auto;
   /* border-radius: 1rem; */
   border-collapse: collapse;
+}
+
+/* This gives the stripped look of the even rows */
+.responsive-table tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
 }
 
 .responsive-table th,
@@ -33,8 +39,18 @@ h2 {
   padding: 1rem;
 }
 
+
+/* Target the columns width */
 .head-topic {
   width: 45vw;
+}
+
+.head-taught {
+  width: 20vw;
+}
+
+.head-read {
+  width: 25vw;
 }
 
 /* Make the table responsive */
