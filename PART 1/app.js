@@ -2,29 +2,27 @@
 const tableRowArray = document.getElementsByTagName("tr");
 // console.log(tableRowArray);
 
-
+// USING A FOR LOOP FOR ITERATION
 // This iterates through the table row array, and brings out each individual table row
 for (let i = 1; i < tableRowArray.length; i++) {
   const tableRow = tableRowArray[i];
-  // console.log(tableRow);
 
   // Selects all the table data into an array
-  const tableDataArray = tableRow.children;
-  // console.log(tableDataArray);
+  const tableDataArray = tableRow.cells;
 
   // This selects the Read table data and performs a function
   const tableDataRead = tableDataArray[2];
   tableDataRead.addEventListener("click", (e) => {
     const togClass = tableDataRead.classList.toggle("true");
-    // console.log(togClass);
+  
     if (togClass) {
       tableDataRead.textContent = `Completed`
     } else {
       tableDataRead.textContent = `Pending`
     }
-    // console.log("Clicked");
   })
 
+  // Can I not iterate this because of the HTML collection array
   for (let j = 0; j < tableDataArray; j++) {
     const tableData = tableDataArray[j]
     tableData.addEventListener("click", () => {
@@ -39,21 +37,21 @@ for (let i = 1; i < tableRowArray.length; i++) {
 
 
 // const tableBodyArray = document.getElementsByTagName("tbody");
-// // console.log(tableBodyArray);
+// console.log(tableBodyArray);
 
 // for (let i = 0; i < tableBodyArray.length; i++) {
 //   const tableBody = tableBodyArray[i];
-//   // console.log(tableBody);
+  // console.log(tableBody);
 
 //   const tableRowArray = tableBody.children;
-//   // console.log(tableRowArray);
+  // console.log(tableRowArray);
 
 //   for(let j = 0; j < tableRowArray.length; j++) {
 //     const tableRow = tableRowArray[j];
-//     // console.log(tableRow);
+    // console.log(tableRow);
 
 //     const tableDataArray = tableRow.children;
-//     // console.log(tableDataArray);
+    // console.log(tableDataArray);
 //   }
 // }
 

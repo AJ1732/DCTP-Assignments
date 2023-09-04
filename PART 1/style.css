@@ -17,11 +17,6 @@ h2 {
   border-collapse: collapse;
 }
 
-/* This gives the stripped look of the even rows */
-.responsive-table tr:nth-child(even) {
-  background-color: rgb(240, 240, 240);
-}
-
 .responsive-table th,
 .responsive-table td {
   padding: 0.5rem;
@@ -35,22 +30,26 @@ h2 {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* This gives the stripped look of the even rows */
+.responsive-table tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
 .responsive-table td {
-  padding: 1rem;
-}
-
-
-/* Target the columns width */
-.head-topic {
-  width: 45vw;
-}
-
-.head-taught {
-  width: 20vw;
-}
-
-.head-read {
-  width: 25vw;
+  padding: 0.5rem;
 }
 
 /* Make the table responsive */
+.responsive-table td:nth-child(1) {
+  width: 45vw;
+  min-width: 45vw;
+}
+
+.responsive-table td:nth-child(2) {
+  width: 20vw;
+}
+
+.responsive-table td:nth-child(3) {
+  min-width: 25vw;
+  width: 30vw;
+}
