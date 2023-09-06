@@ -41,15 +41,16 @@ h2 {
 
 /* Make the table responsive */
 .responsive-table td:nth-child(1) {
-  width: 45vw;
-  min-width: 45vw;
+  width: 35vw;
+  min-width: 35vw;
 }
 
-.responsive-table td:nth-child(2) {
-  width: 20vw;
+.responsive-table td:nth-child(n + 2) {
+  width: 10vw;
+  min-width: 10vw;
 }
 
 .responsive-table td:nth-child(3) {
-  min-width: 25vw;
-  width: 30vw;
+  min-width: 15vw;
+  width: 15vw;
 }
