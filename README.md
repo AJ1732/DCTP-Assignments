@@ -8,3 +8,6 @@ This repository contains a collection of coding assignments that I completed as 
 
    ```bash
    git clone https://github.com/AJ1732/DTCP-assignments.git
+
+2. Live Site
+   https://aj1732.github.io/DTCP-Assignments/
